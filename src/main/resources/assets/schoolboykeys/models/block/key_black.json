@@ -1,0 +1,8 @@
+{
+  "parent": "schoolboykeys:custom/key_model",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "0": "schoolboykeys:block/key_black",
+    "particle": "schoolboykeys:block/key_black"
+  }
+}

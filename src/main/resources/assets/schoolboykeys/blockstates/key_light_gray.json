@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "schoolboykeys:block/key_light_gray"
+    },
+    "facing=east": {
+      "model": "schoolboykeys:block/key_light_gray",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "schoolboykeys:block/key_light_gray",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "schoolboykeys:block/key_light_gray",
+      "y": 270
+    }
+  }
+}

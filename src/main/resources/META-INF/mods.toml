@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All rights reserved"
+
+[[mods]]
+modId="schoolboykeys"
+version="1.0.0"
+displayName="Schoolboy Keys"
+description='''
+Дополнение для SchoolBoyRunaway: 16 цветных ключей, которые можно положить на пол,
+и дверь, которой можно назначить свой ключ.
+'''
+
+[[dependencies.schoolboykeys]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.schoolboykeys]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"

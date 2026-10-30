@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "schoolboykeys:key_door",
+              "properties": {
+                "half": "lower"
+              }
+            }
+          ],
+          "name": "schoolboykeys:key_door"
+        }
+      ]
+    }
+  ]
+}
