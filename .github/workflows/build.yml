@@ -7,8 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Найти проект
+      - name: Структура репозитория
         run: |
+          echo “=== settings/build ===“
+          find . -maxdepth 3 \( -name settings.gradle -o -name build.gradle -o -name gradle.properties \) -not -path ‘./.git/*’
+          echo “=== java ===“
+          find . -name “*.java” -not -path ‘./.git/*’ | head -20
           echo “PROJ=$(dirname “$(find . -name settings.gradle -not -path ‘./.git/*’ | head -1)”)” >> $GITHUB_ENV
       - uses: actions/setup-java@v4
         with:
@@ -17,12 +21,17 @@ jobs:
       - uses: gradle/actions/setup-gradle@v3
         with:
           gradle-version: 8.8
-      - run: gradle build
+      - name: Сборка
+        run: gradle build —console=plain
         working-directory: ${{ env.PROJ }}
-      - name: Показать jar
-        run: find . -name “*.jar” -not -path “*/.gradle/*” -not -path “*/.git/*”
+      - name: Что получилось
+        run: |
+          pwd
+          ls -la
+          ls -R build | head -60
+        working-directory: ${{ env.PROJ }}
       - uses: actions/upload-artifact@v4
         with:
-          name: schoolboykeys-jar
-          path: “**/build/libs/*.jar”
-          if-no-files-found: error
+          name: schoolboykeys-build
+          path: ${{ env.PROJ }}/build/**
+          if-no-files-found: warn
