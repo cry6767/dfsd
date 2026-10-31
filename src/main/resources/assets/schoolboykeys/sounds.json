@@ -22,5 +22,13 @@
         "stream": false
       }
     ]
+  },
+  "pills_pour": {
+    "sounds": [
+      {
+        "name": "schoolboykeys:pills_pour",
+        "stream": false
+      }
+    ]
   }
 }

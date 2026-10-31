@@ -1,0 +1,7 @@
+{
+  "parent": "schoolboykeys:custom/key_model",
+  "textures": {
+    "0": "schoolboykeys:item/medkit_key",
+    "particle": "schoolboykeys:item/medkit_key"
+  }
+}

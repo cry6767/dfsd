@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "schoolboykeys:sleeping_pills",
+    {
+      "id": "schoolboyrunaway:weak",
+      "required": false
+    }
+  ]
+}

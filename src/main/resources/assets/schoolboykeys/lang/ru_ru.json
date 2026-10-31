@@ -40,5 +40,15 @@
   "block.schoolboykeys.key_red": "Красный ключ",
   "item.schoolboykeys.key_red": "Красный ключ",
   "block.schoolboykeys.key_black": "Чёрный ключ",
-  "item.schoolboykeys.key_black": "Чёрный ключ"
+  "item.schoolboykeys.key_black": "Чёрный ключ",
+  "block.schoolboykeys.medkit": "Аптечка",
+  "item.schoolboykeys.medkit": "Аптечка",
+  "item.schoolboykeys.medkit_key": "Ключ от аптечки",
+  "item.schoolboykeys.sleeping_pills": "Снотворное",
+  "message.schoolboykeys.medkit_opened": "Аптечка открыта",
+  "message.schoolboykeys.medkit_closed": "Аптечка закрыта",
+  "message.schoolboykeys.medkit_locked": "Аптечка заперта",
+  "message.schoolboykeys.medkit_idle": "Аптечка...",
+  "message.schoolboykeys.pills_laxative": "Кого-то прорвёт))",
+  "message.schoolboykeys.pills_sleeping": "Кто-то уснёт))"
 }

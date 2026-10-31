@@ -1,0 +1,7 @@
+{
+  "parent": "schoolboykeys:custom/pills_model",
+  "textures": {
+    "2": "schoolboykeys:block/sleeping_pills",
+    "particle": "schoolboykeys:block/sleeping_pills"
+  }
+}

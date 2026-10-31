@@ -40,5 +40,15 @@
   "block.schoolboykeys.key_red": "Red Key",
   "item.schoolboykeys.key_red": "Red Key",
   "block.schoolboykeys.key_black": "Black Key",
-  "item.schoolboykeys.key_black": "Black Key"
+  "item.schoolboykeys.key_black": "Black Key",
+  "block.schoolboykeys.medkit": "First Aid Kit",
+  "item.schoolboykeys.medkit": "First Aid Kit",
+  "item.schoolboykeys.medkit_key": "First Aid Kit Key",
+  "item.schoolboykeys.sleeping_pills": "Sleeping Pills",
+  "message.schoolboykeys.medkit_opened": "First aid kit opened",
+  "message.schoolboykeys.medkit_closed": "First aid kit locked",
+  "message.schoolboykeys.medkit_locked": "The first aid kit is locked",
+  "message.schoolboykeys.medkit_idle": "First aid kit...",
+  "message.schoolboykeys.pills_laxative": "Somebody is in for a surprise))",
+  "message.schoolboykeys.pills_sleeping": "Somebody will fall asleep))"
 }

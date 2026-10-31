@@ -14,6 +14,7 @@ public final class ModSounds {
     public static final RegistryObject<SoundEvent> KEY_PICKUP = register("key_pickup");
     public static final RegistryObject<SoundEvent> DOOR_LOCKED = register("door_locked");
     public static final RegistryObject<SoundEvent> DOOR_UNLOCK = register("door_unlock");
+    public static final RegistryObject<SoundEvent> PILLS_POUR = register("pills_pour");
 
     private static RegistryObject<SoundEvent> register(String name) {
         return SOUNDS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(KeysMod.MODID, name)));

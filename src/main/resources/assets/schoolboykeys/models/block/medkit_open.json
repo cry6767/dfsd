@@ -1,0 +1,140 @@
+{
+  "parent": "minecraft:block/block",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "front": "schoolboykeys:block/medkit_front",
+    "side": "schoolboykeys:block/medkit_side",
+    "top": "schoolboykeys:block/medkit_top",
+    "inside": "schoolboykeys:block/medkit_inside",
+    "particle": "schoolboykeys:block/medkit_side"
+  },
+  "elements": [
+    {
+      "from": [
+        2,
+        0,
+        4
+      ],
+      "to": [
+        14,
+        5,
+        12
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            4,
+            14,
+            9
+          ],
+          "texture": "#front"
+        },
+        "south": {
+          "uv": [
+            2,
+            4,
+            14,
+            9
+          ],
+          "texture": "#side"
+        },
+        "east": {
+          "uv": [
+            4,
+            4,
+            12,
+            9
+          ],
+          "texture": "#side"
+        },
+        "west": {
+          "uv": [
+            4,
+            4,
+            12,
+            9
+          ],
+          "texture": "#side"
+        },
+        "up": {
+          "uv": [
+            2,
+            4,
+            14,
+            12
+          ],
+          "texture": "#inside"
+        },
+        "down": {
+          "uv": [
+            2,
+            4,
+            14,
+            12
+          ],
+          "texture": "#side"
+        }
+      }
+    },
+    {
+      "from": [
+        2,
+        5,
+        11
+      ],
+      "to": [
+        14,
+        12,
+        12
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            2,
+            4,
+            14,
+            11
+          ],
+          "texture": "#top"
+        },
+        "south": {
+          "uv": [
+            2,
+            4,
+            14,
+            11
+          ],
+          "texture": "#side"
+        },
+        "east": {
+          "uv": [
+            11,
+            4,
+            12,
+            11
+          ],
+          "texture": "#side"
+        },
+        "west": {
+          "uv": [
+            11,
+            4,
+            12,
+            11
+          ],
+          "texture": "#side"
+        },
+        "up": {
+          "uv": [
+            2,
+            11,
+            14,
+            12
+          ],
+          "texture": "#side"
+        }
+      }
+    }
+  ]
+}

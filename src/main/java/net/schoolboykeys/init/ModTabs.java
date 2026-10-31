@@ -21,6 +21,9 @@ public final class ModTabs {
                     output.accept(ModItems.KEYS.get(color).get());
                 }
                 output.accept(ModItems.KEY_DOOR.get());
+                output.accept(ModItems.MEDKIT.get());
+                output.accept(ModItems.MEDKIT_KEY.get());
+                output.accept(ModItems.SLEEPING_PILLS.get());
             })
             .build());
 
