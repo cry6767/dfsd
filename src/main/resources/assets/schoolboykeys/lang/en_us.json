@@ -2,7 +2,7 @@
   "itemGroup.schoolboykeys": "Schoolboy Keys",
   "block.schoolboykeys.key_door": "Keyed Door",
   "item.schoolboykeys.key_door": "Keyed Door",
-  "tooltip.schoolboykeys.key_unbound": "Not bound yet. Sneak + right-click a Keyed Door to bind",
+  "tooltip.schoolboykeys.key_unbound": "Not bound yet. Right-click a Keyed Door to bind",
   "tooltip.schoolboykeys.key_id": "Key No. %s",
   "message.schoolboykeys.door_bound": "Door bound to key No. %s and locked",
   "message.schoolboykeys.door_locked": "Door locked",

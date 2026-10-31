@@ -6,6 +6,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.schoolboykeys.init.ModBlockEntities;
 import net.schoolboykeys.init.ModBlocks;
 import net.schoolboykeys.init.ModItems;
+import net.schoolboykeys.init.ModSounds;
 import net.schoolboykeys.init.ModTabs;
 
 @Mod(KeysMod.MODID)
@@ -17,6 +18,7 @@ public class KeysMod {
         ModBlocks.BLOCKS.register(bus);
         ModItems.ITEMS.register(bus);
         ModBlockEntities.BLOCK_ENTITIES.register(bus);
+        ModSounds.SOUNDS.register(bus);
         ModTabs.TABS.register(bus);
     }
 }

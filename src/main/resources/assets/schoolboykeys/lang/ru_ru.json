@@ -2,7 +2,7 @@
   "itemGroup.schoolboykeys": "Ключи Schoolboy",
   "block.schoolboykeys.key_door": "Дверь с замком",
   "item.schoolboykeys.key_door": "Дверь с замком",
-  "tooltip.schoolboykeys.key_unbound": "Ещё не привязан. Shift + ПКМ по двери с замком, чтобы привязать",
+  "tooltip.schoolboykeys.key_unbound": "Ещё не привязан. ПКМ по двери с замком, чтобы привязать",
   "tooltip.schoolboykeys.key_id": "Ключ №%s",
   "message.schoolboykeys.door_bound": "Дверь привязана к ключу №%s и заперта",
   "message.schoolboykeys.door_locked": "Дверь заперта",

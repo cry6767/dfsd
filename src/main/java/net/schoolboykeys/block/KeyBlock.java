@@ -6,7 +6,6 @@ import javax.annotation.Nullable;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -38,6 +37,7 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.schoolboykeys.init.ModBlockEntities;
+import net.schoolboykeys.init.ModSounds;
 
 /** Ключ, лежащий на полу. ПКМ — забрать обратно (номер ключа сохраняется). */
 public class KeyBlock extends Block implements EntityBlock {
@@ -136,7 +136,7 @@ public class KeyBlock extends Block implements EntityBlock {
             be.applyTo(stack);
         }
         level.removeBlock(pos, false);
-        level.playSound(null, pos, SoundEvents.ITEM_PICKUP, SoundSource.PLAYERS, 0.4F, 1.2F);
+        level.playSound(null, pos, ModSounds.KEY_PICKUP.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
         if (!player.getInventory().add(stack)) {
             player.drop(stack, false);
         }

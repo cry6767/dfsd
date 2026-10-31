@@ -1,0 +1,26 @@
+{
+  "key_pickup": {
+    "sounds": [
+      {
+        "name": "schoolboykeys:key_pickup",
+        "stream": false
+      }
+    ]
+  },
+  "door_locked": {
+    "sounds": [
+      {
+        "name": "schoolboykeys:door_locked",
+        "stream": false
+      }
+    ]
+  },
+  "door_unlock": {
+    "sounds": [
+      {
+        "name": "schoolboykeys:door_unlock",
+        "stream": false
+      }
+    ]
+  }
+}

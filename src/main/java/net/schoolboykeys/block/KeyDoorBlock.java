@@ -4,7 +4,6 @@ import javax.annotation.Nullable;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -23,13 +22,14 @@ import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.BlockHitResult;
+import net.schoolboykeys.init.ModSounds;
 import net.schoolboykeys.item.ColorKeyItem;
 import net.schoolboykeys.util.KeyData;
 
 /**
  * Дверь с замком.
  * <ul>
- *   <li>Shift+ПКМ любым ключом по свободной двери — привязать дверь к этому ключу (дверь закрывается и запирается).</li>
+ *   <li>ПКМ любым ключом по свободной двери — привязать дверь к этому ключу (дверь закрывается и запирается).</li>
  *   <li>ПКМ подходящим ключом по запертой двери — отпереть и открыть.</li>
  *   <li>Shift+ПКМ подходящим ключом — запереть / отпереть.</li>
  *   <li>Ключ другого цвета/номера не подходит.</li>
@@ -74,12 +74,12 @@ public class KeyDoorBlock extends DoorBlock implements EntityBlock {
 
         // 1. Дверь ещё никому не назначена
         if (!door.hasKey()) {
-            if (holdsKey && sneaking) {
+            if (holdsKey) {
                 String id = KeyData.ensure(held);
                 door.setKeyId(id);
                 this.setOpen(player, level, lowerState, lower, false);
                 door.setLocked(true);
-                level.playSound(null, lower, SoundEvents.LEVER_CLICK, SoundSource.BLOCKS, 1.0F, 0.6F);
+                level.playSound(null, lower, ModSounds.DOOR_UNLOCK.get(), SoundSource.BLOCKS, 1.0F, 0.6F);
                 player.displayClientMessage(
                         Component.translatable("message.schoolboykeys.door_bound", KeyData.shortId(id)), true);
                 return InteractionResult.CONSUME;
@@ -94,12 +94,12 @@ public class KeyDoorBlock extends DoorBlock implements EntityBlock {
         if (matches && sneaking) {
             if (door.isLocked()) {
                 door.setLocked(false);
-                level.playSound(null, lower, SoundEvents.LEVER_CLICK, SoundSource.BLOCKS, 1.0F, 1.0F);
+                level.playSound(null, lower, ModSounds.DOOR_UNLOCK.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
                 player.displayClientMessage(Component.translatable("message.schoolboykeys.door_unlocked"), true);
             } else {
                 this.setOpen(player, level, lowerState, lower, false);
                 door.setLocked(true);
-                level.playSound(null, lower, SoundEvents.LEVER_CLICK, SoundSource.BLOCKS, 1.0F, 0.6F);
+                level.playSound(null, lower, ModSounds.DOOR_UNLOCK.get(), SoundSource.BLOCKS, 1.0F, 0.6F);
                 player.displayClientMessage(Component.translatable("message.schoolboykeys.door_locked"), true);
             }
             return InteractionResult.CONSUME;
@@ -111,7 +111,7 @@ public class KeyDoorBlock extends DoorBlock implements EntityBlock {
                 this.setOpen(player, level, lowerState, lower, true);
                 player.displayClientMessage(Component.translatable("message.schoolboykeys.door_unlocked"), true);
             } else {
-                level.playSound(null, lower, SoundEvents.CHEST_LOCKED, SoundSource.BLOCKS, 1.0F, 1.0F);
+                level.playSound(null, lower, ModSounds.DOOR_LOCKED.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
                 player.displayClientMessage(Component.translatable(
                         holdsKey ? "message.schoolboykeys.wrong_key" : "message.schoolboykeys.door_is_locked"), true);
             }
