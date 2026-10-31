@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "schoolboykeys:block/sleeping_pills"
+    },
+    "facing=east": {
+      "model": "schoolboykeys:block/sleeping_pills",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "schoolboykeys:block/sleeping_pills",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "schoolboykeys:block/sleeping_pills",
+      "y": 270
+    }
+  }
+}

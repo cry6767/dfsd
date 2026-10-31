@@ -1,0 +1,9 @@
+{
+  "parent": "schoolboykeys:custom/pills_model",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "2": "schoolboykeys:block/sleeping_pills",
+    "all": "schoolboykeys:block/sleeping_pills",
+    "particle": "schoolboykeys:block/sleeping_pills"
+  }
+}

@@ -50,5 +50,6 @@
   "message.schoolboykeys.medkit_locked": "Аптечка заперта",
   "message.schoolboykeys.medkit_idle": "Аптечка...",
   "message.schoolboykeys.pills_laxative": "Кого-то прорвёт))",
-  "message.schoolboykeys.pills_sleeping": "Кто-то уснёт))"
+  "message.schoolboykeys.pills_sleeping": "Кто-то уснёт))",
+  "block.schoolboykeys.sleeping_pills": "Снотворное"
 }

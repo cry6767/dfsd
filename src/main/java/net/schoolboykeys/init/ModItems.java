@@ -32,7 +32,7 @@ public final class ModItems {
                 () -> new DoubleHighBlockItem(ModBlocks.KEY_DOOR.get(), new Item.Properties()));
         MEDKIT = ITEMS.register("medkit", () -> new BlockItem(ModBlocks.MEDKIT.get(), new Item.Properties()));
         MEDKIT_KEY = ITEMS.register("medkit_key", () -> new MedkitKeyItem(new Item.Properties().stacksTo(1)));
-        SLEEPING_PILLS = ITEMS.register("sleeping_pills", () -> new Item(new Item.Properties().stacksTo(16)));
+        SLEEPING_PILLS = ITEMS.register("sleeping_pills", () -> new BlockItem(ModBlocks.SLEEPING_PILLS.get(), new Item.Properties().stacksTo(16)));
     }
 
     private ModItems() {

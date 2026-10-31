@@ -50,5 +50,6 @@
   "message.schoolboykeys.medkit_locked": "The first aid kit is locked",
   "message.schoolboykeys.medkit_idle": "First aid kit...",
   "message.schoolboykeys.pills_laxative": "Somebody is in for a surprise))",
-  "message.schoolboykeys.pills_sleeping": "Somebody will fall asleep))"
+  "message.schoolboykeys.pills_sleeping": "Somebody will fall asleep))",
+  "block.schoolboykeys.sleeping_pills": "Sleeping Pills"
 }
