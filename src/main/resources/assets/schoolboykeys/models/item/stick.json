@@ -1,3 +1,6 @@
 {
-  "parent": "schoolboykeys:block/stick"
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "schoolboykeys:item/stick"
+  }
 }
