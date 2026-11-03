@@ -1,0 +1,38 @@
+name: build
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Find project
+        run: |
+          echo PROJ=$(dirname $(find . -name settings.gradle | head -1)) >> $GITHUB_ENV
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: 8.8
+      - name: Build
+        run: gradle build
+        working-directory: ${{ env.PROJ }}
+      - name: Check resources in jar
+        run: |
+          JAR=$(ls build/libs/*.jar | head -1)
+          echo jar: $JAR
+          echo textures: $(unzip -l $JAR | grep -c textures/)
+          echo models: $(unzip -l $JAR | grep -c models/)
+          echo blockstates: $(unzip -l $JAR | grep -c blockstates/)
+          echo sounds: $(unzip -l $JAR | grep -c sounds/)
+          test $(unzip -l $JAR | grep -c textures/) -ge 34
+          test $(unzip -l $JAR | grep -c models/) -ge 60
+          test $(unzip -l $JAR | grep -c blockstates/) -ge 24
+        working-directory: ${{ env.PROJ }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: schoolboykeys-jar
+          path: ${{ env.PROJ }}/build/libs/*.jar
