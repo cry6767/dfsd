@@ -39,7 +39,7 @@ public final class ModBlocks {
         SLEEPING_PILLS = BLOCKS.register("sleeping_pills", PillsBlock::new);
         KNIFE = BLOCKS.register("knife", () -> new PropBlock(14.5D, 3.5D, 2.3D));
         FIREWORK = BLOCKS.register("firework", FireworkBlock::new);
-        FIREWORK_CUT = BLOCKS.register("firework_cut", () -> new PropBlock(13.0D, 6.0D, 2.0D));
+        FIREWORK_CUT = BLOCKS.register("firework_cut", () -> new PropBlock(15.0D, 6.0D, 2.0D));
         STICK = BLOCKS.register("stick", () -> new PropBlock(13.6D, 5.0D, 1.6D));
         PINK_CUP = BLOCKS.register("pink_cup", PinkCupBlock::new);
     }

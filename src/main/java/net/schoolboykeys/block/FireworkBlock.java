@@ -18,7 +18,7 @@ import net.schoolboykeys.init.ModItems;
 /** Фейерверк на полу. ПКМ ножом — разрезать (получаешь порох), ПКМ рукой — забрать. */
 public class FireworkBlock extends PropBlock {
     public FireworkBlock() {
-        super(14.0D, 5.8D, 2.3D);
+        super(15.5D, 6.5D, 2.2D);
     }
 
     @Override
