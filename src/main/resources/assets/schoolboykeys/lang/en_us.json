@@ -51,5 +51,17 @@
   "message.schoolboykeys.medkit_idle": "First aid kit...",
   "message.schoolboykeys.pills_laxative": "Somebody is in for a surprise))",
   "message.schoolboykeys.pills_sleeping": "Somebody will fall asleep))",
-  "block.schoolboykeys.sleeping_pills": "Sleeping Pills"
+  "block.schoolboykeys.sleeping_pills": "Sleeping Pills",
+  "block.schoolboykeys.knife": "Knife",
+  "item.schoolboykeys.knife": "Knife",
+  "block.schoolboykeys.firework": "Firework",
+  "item.schoolboykeys.firework": "Firework",
+  "block.schoolboykeys.firework_cut": "Cut Firework",
+  "item.schoolboykeys.firework_cut": "Cut Firework",
+  "block.schoolboykeys.stick": "Stick",
+  "item.schoolboykeys.stick": "Stick",
+  "block.schoolboykeys.pink_cup": "Pink Cup",
+  "item.schoolboykeys.pink_cup": "Pink Cup",
+  "message.schoolboykeys.firework_cut": "Firework cut open. You got gunpowder",
+  "message.schoolboykeys.cup_idle": "Cup..."
 }

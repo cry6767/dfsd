@@ -51,5 +51,17 @@
   "message.schoolboykeys.medkit_idle": "Аптечка...",
   "message.schoolboykeys.pills_laxative": "Кого-то прорвёт))",
   "message.schoolboykeys.pills_sleeping": "Кто-то уснёт))",
-  "block.schoolboykeys.sleeping_pills": "Снотворное"
+  "block.schoolboykeys.sleeping_pills": "Снотворное",
+  "block.schoolboykeys.knife": "Нож",
+  "item.schoolboykeys.knife": "Нож",
+  "block.schoolboykeys.firework": "Фейерверк",
+  "item.schoolboykeys.firework": "Фейерверк",
+  "block.schoolboykeys.firework_cut": "Разрезанный фейерверк",
+  "item.schoolboykeys.firework_cut": "Разрезанный фейерверк",
+  "block.schoolboykeys.stick": "Палка",
+  "item.schoolboykeys.stick": "Палка",
+  "block.schoolboykeys.pink_cup": "Розовая кружка",
+  "item.schoolboykeys.pink_cup": "Розовая кружка",
+  "message.schoolboykeys.firework_cut": "Фейерверк разрезан. Получен порох",
+  "message.schoolboykeys.cup_idle": "Кружка..."
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "schoolboykeys:item/pink_cup"
+  },
+  "render_type": "translucent"
+}

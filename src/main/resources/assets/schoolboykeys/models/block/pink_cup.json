@@ -1,0 +1,10 @@
+{
+  "parent": "schoolboykeys:custom/cup_model",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "all": "schoolboykeys:block/pink_cup",
+    "particle": "schoolboykeys:block/pink_cup",
+    "0": "schoolboykeys:block/pink_cup",
+    "texture": "schoolboykeys:block/pink_cup"
+  }
+}

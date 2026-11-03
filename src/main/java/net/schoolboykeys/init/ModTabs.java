@@ -24,6 +24,11 @@ public final class ModTabs {
                 output.accept(ModItems.MEDKIT.get());
                 output.accept(ModItems.MEDKIT_KEY.get());
                 output.accept(ModItems.SLEEPING_PILLS.get());
+                output.accept(ModItems.KNIFE.get());
+                output.accept(ModItems.FIREWORK.get());
+                output.accept(ModItems.FIREWORK_CUT.get());
+                output.accept(ModItems.STICK.get());
+                output.accept(ModItems.PINK_CUP.get());
             })
             .build());
 

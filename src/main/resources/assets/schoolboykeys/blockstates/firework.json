@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "schoolboykeys:block/firework"
+    },
+    "facing=east": {
+      "model": "schoolboykeys:block/firework",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "schoolboykeys:block/firework",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "schoolboykeys:block/firework",
+      "y": 270
+    }
+  }
+}
