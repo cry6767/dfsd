@@ -39,9 +39,15 @@ public class PropBlock extends Block {
 
     private final VoxelShape shapeAlongX;
     private final VoxelShape shapeAlongZ;
+    private final boolean pickupSound;
 
     /** length — длина вдоль оси модели (X), width — ширина, height — высота (в 1/16 блока). */
     public PropBlock(double length, double width, double height) {
+        this(length, width, height, true);
+    }
+
+    /** pickupSound = false — предмет подбирается без звука (нож, палка). */
+    public PropBlock(double length, double width, double height, boolean pickupSound) {
         super(BlockBehaviour.Properties.of()
                 .strength(0.2F)
                 .sound(SoundType.WOOD)
@@ -51,6 +57,7 @@ public class PropBlock extends Block {
                 8.0D + length / 2.0D, height, 8.0D + width / 2.0D);
         this.shapeAlongZ = Block.box(8.0D - width / 2.0D, 0.0D, 8.0D - length / 2.0D,
                 8.0D + width / 2.0D, height, 8.0D + length / 2.0D);
+        this.pickupSound = pickupSound;
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
     }
 
@@ -110,7 +117,9 @@ public class PropBlock extends Block {
         }
         ItemStack stack = new ItemStack(this);
         level.removeBlock(pos, false);
-        level.playSound(null, pos, ModSounds.KEY_PICKUP.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
+        if (this.pickupSound) {
+            level.playSound(null, pos, ModSounds.KEY_PICKUP.get(), SoundSource.BLOCKS, 1.0F, 1.0F);
+        }
         if (!player.getInventory().add(stack)) {
             player.drop(stack, false);
         }

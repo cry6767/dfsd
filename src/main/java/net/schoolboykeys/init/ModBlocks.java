@@ -37,10 +37,10 @@ public final class ModBlocks {
         KEY_DOOR = BLOCKS.register("key_door", KeyDoorBlock::new);
         MEDKIT = BLOCKS.register("medkit", MedkitBlock::new);
         SLEEPING_PILLS = BLOCKS.register("sleeping_pills", PillsBlock::new);
-        KNIFE = BLOCKS.register("knife", () -> new PropBlock(14.5D, 3.5D, 2.3D));
+        KNIFE = BLOCKS.register("knife", () -> new PropBlock(14.5D, 3.5D, 2.3D, false));
         FIREWORK = BLOCKS.register("firework", FireworkBlock::new);
         FIREWORK_CUT = BLOCKS.register("firework_cut", () -> new PropBlock(15.0D, 6.0D, 2.0D));
-        STICK = BLOCKS.register("stick", () -> new PropBlock(13.6D, 5.0D, 1.6D));
+        STICK = BLOCKS.register("stick", () -> new PropBlock(13.6D, 5.0D, 1.6D, false));
         PINK_CUP = BLOCKS.register("pink_cup", PinkCupBlock::new);
     }
 
